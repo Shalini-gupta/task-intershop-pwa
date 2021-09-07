@@ -201,8 +201,18 @@
       "check-separator",
       "check-type"
     ],
-    "directive-selector": [true, "attribute", ["ish"], "camelCase"],
-    "component-selector": [true, "element", ["ish"], "kebab-case"],
+    "directive-selector": [
+      true,
+      "attribute",
+      ["ish", "custom", "sh"],
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      ["ish", "custom", "sh"],
+      "kebab-case"
+    ],
     "no-inputs-metadata-property": true,
     "no-assignment-to-inputs": true,
     "no-outputs-metadata-property": true,
@@ -572,7 +582,7 @@
         "warnUnmatched": false,
         "reusePatterns": {
           "name": "[a-z][a-z0-9]*(?:-[a-z][a-z0-9]*)*",
-          "theme": "(?:\\.(?:default|blue))*"
+          "theme": "(?:\\.(?:default|blue|brand))*"
         },
         "pathPatterns": [
           "^.*/src/environments/environment(\\.\\w+)?\\.ts$",

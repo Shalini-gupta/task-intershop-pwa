@@ -29,6 +29,7 @@ import { LanguageSwitchComponent } from './header/language-switch/language-switc
 import { LoginStatusComponent } from './header/login-status/login-status.component';
 import { MiniBasketComponent } from './header/mini-basket/mini-basket.component';
 import { ProductCompareStatusComponent } from './header/product-compare-status/product-compare-status.component';
+import { ShHeaderNavigationComponent } from './header/sh-header-navigation/sh-header-navigation.component';
 import { SubCategoryNavigationComponent } from './header/sub-category-navigation/sub-category-navigation.component';
 import { UserInformationMobileComponent } from './header/user-information-mobile/user-information-mobile.component';
 import { LazyContentIncludeComponent } from './shared/lazy-content-include/lazy-content-include.component';
@@ -70,6 +71,7 @@ const exportedComponents = [CookiesBannerComponent, FooterComponent, HeaderCompo
     LoginStatusComponent,
     MiniBasketComponent,
     ProductCompareStatusComponent,
+    ShHeaderNavigationComponent,
     SubCategoryNavigationComponent,
     UserInformationMobileComponent,
   ],

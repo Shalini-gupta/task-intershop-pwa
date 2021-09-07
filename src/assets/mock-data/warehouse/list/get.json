@@ -1,0 +1,54 @@
+{
+  "elements": [
+    {
+      "country": "Germany",
+      "city": "Jena",
+      "zipcode": "4957"
+    },
+    {
+      "country": "Australia",
+      "city": "Melbourne",
+      "zipcode": "1515"
+    },
+    {
+      "country": "United States",
+      "city": "San Francisco",
+      "zipcode": "3127"
+    },
+    {
+      "country": "United Kingdom",
+      "city": "London",
+      "zipcode": "4463"
+    },
+    {
+      "country": "China",
+      "city": "Sanghai",
+      "zipcode": "4304"
+    },
+    {
+      "country": "Japan",
+      "city": "Tokyo",
+      "zipcode": "3212"
+    },
+    {
+      "country": "India ",
+      "city": "New Delhi",
+      "zipcode": "991"
+    },
+    {
+      "country": "Mexico",
+      "city": "Mexico City",
+      "zipcode": "796"
+    },
+    {
+      "country": "Brasil",
+      "city": "Brasilla",
+      "zipcode": "3218"
+    },
+    {
+      "country": "Russia",
+      "city": "Moscow",
+      "zipcode": "795"
+    }
+  ]
+}

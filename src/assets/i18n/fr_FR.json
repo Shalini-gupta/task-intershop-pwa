@@ -980,5 +980,7 @@
   "tacton.submit.error.message": "Une erreur technique s’est produite lors du traitement de votre demande. Veuillez réessayer plus tard.",
   "tacton.submit.success.message": "Votre demande de devis a été soumise avec succès. Nous vous enverrons un courriel à <strong>{{0}}</strong> pour vous tenir au courant de l’état de votre demande.",
   "tacton.undo.tooltip": "Annuler",
-  "textarea.max_limit": "Votre message : {{0}} caractères restants."
+  "textarea.max_limit": "Votre message : {{0}} caractères restants.",
+  "warehouse.heading.text": "Notre entrepôt",
+  "warehouse.navigation": "Dépot"
 }
