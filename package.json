@@ -182,8 +182,7 @@
       "prettier --loglevel warn --write"
     ],
     "*.ts": [
-      "tslint --project tsconfig.json --fix",
-      "jest --ci --bail --findRelatedTests"
+      "tslint --project tsconfig.json --fix"
     ],
     "src/assets/i18n/*.json": [
       "sort-json --indent-size=2"
@@ -198,7 +197,7 @@
     "commitizen": {
       "path": "./node_modules/cz-customizable"
     },
-    "active-themes": "default,blue"
+    "active-themes": "default,blue,brand"
   },
   "postinstall": {
     "jest-extended/types": "copy node_modules/@types/jest-extended"

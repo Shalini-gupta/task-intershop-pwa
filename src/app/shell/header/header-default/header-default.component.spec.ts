@@ -6,11 +6,11 @@ import { MockComponent } from 'ng-mocks';
 
 import { FeatureToggleModule } from 'ish-core/feature-toggle.module';
 import { findAllCustomElements } from 'ish-core/utils/dev/html-query-utils';
-import { HeaderNavigationComponent } from 'ish-shell/header/header-navigation/header-navigation.component';
 import { LanguageSwitchComponent } from 'ish-shell/header/language-switch/language-switch.component';
 import { LoginStatusComponent } from 'ish-shell/header/login-status/login-status.component';
 import { MiniBasketComponent } from 'ish-shell/header/mini-basket/mini-basket.component';
 import { ProductCompareStatusComponent } from 'ish-shell/header/product-compare-status/product-compare-status.component';
+import { ShHeaderNavigationComponent } from 'ish-shell/header/sh-header-navigation/sh-header-navigation.component';
 import { UserInformationMobileComponent } from 'ish-shell/header/user-information-mobile/user-information-mobile.component';
 import { LazySearchBoxComponent } from 'ish-shell/shared/lazy-search-box/lazy-search-box.component';
 
@@ -30,7 +30,6 @@ describe('Header Default Component', () => {
       declarations: [
         HeaderDefaultComponent,
         MockComponent(FaIconComponent),
-        MockComponent(HeaderNavigationComponent),
         MockComponent(LanguageSwitchComponent),
         MockComponent(LazyQuickorderLinkComponent),
         MockComponent(LazySearchBoxComponent),
@@ -39,6 +38,7 @@ describe('Header Default Component', () => {
         MockComponent(MiniBasketComponent),
         MockComponent(NgbCollapse),
         MockComponent(ProductCompareStatusComponent),
+        MockComponent(ShHeaderNavigationComponent),
         MockComponent(UserInformationMobileComponent),
       ],
     }).compileComponents();
@@ -72,7 +72,8 @@ describe('Header Default Component', () => {
 
   it('should render Header Navigation on template', () => {
     fixture.detectChanges();
-    expect(findAllCustomElements(element)).toContain('ish-header-navigation');
+    // expect(findAllCustomElements(element)).toContain('ish-header-navigation');
+    expect(findAllCustomElements(element)).toContain('sh-header-navigation');
   });
 
   it('should render normal header adequately for mobile devices', () => {

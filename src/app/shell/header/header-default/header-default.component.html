@@ -47,11 +47,8 @@
       class="d-none"
       [ngClass]="isSticky ? 'd-lg-block' : 'd-md-block'"
     ></ish-mini-basket>
-    <ish-mini-basket
-      data-testing-id="mini-basket-mobile"
-      view="small"
-      [ngClass]="isSticky ? 'd-lg-none' : 'd-md-none'"
-    ></ish-mini-basket>
+    <ish-mini-basket data-testing-id="mini-basket-mobile" view="small" [ngClass]="isSticky ? 'd-lg-none' : 'd-md-none'">
+    </ish-mini-basket>
   </div>
   <div class="mid-header row align-items-center">
     <div class="col-md-3 logo-col">
@@ -93,7 +90,8 @@
   <div class="global-nav-container">
     <nav class="global-nav navbar-expand-md" [ngbCollapse]="!showNavBar">
       <div class="main-navigation" role="navigation">
-        <ish-header-navigation></ish-header-navigation>
+        <!-- <ish-header-navigation></ish-header-navigation> -->
+        <sh-header-navigation></sh-header-navigation>
         <ish-user-information-mobile></ish-user-information-mobile>
       </div>
     </nav>

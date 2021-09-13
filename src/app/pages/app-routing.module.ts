@@ -144,6 +144,10 @@ const routes: Routes = [
     },
   },
   { path: 'cookies', loadChildren: () => import('./cookies/cookies-page.module').then(m => m.CookiesPageModule) },
+  {
+    path: 'warehouse',
+    loadChildren: () => import('./warehouse/warehouse-page.module').then(m => m.WarehousePageModule),
+  },
 ];
 
 @NgModule({

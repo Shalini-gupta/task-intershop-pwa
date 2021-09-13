@@ -15,7 +15,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "ish",
+      "prefix": "sh",
       "architect": {
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
@@ -93,7 +93,8 @@
               ]
             },
             "default": {},
-            "blue": {}
+            "blue": {},
+            "brand": {}
           }
         },
         "serve": {
@@ -116,6 +117,9 @@
             },
             "blue": {
               "browserTarget": "intershop-pwa:build:blue"
+            },
+            "brand": {
+              "browserTarget": "intershop-pwa:build:brand"
             }
           }
         },
@@ -158,7 +162,8 @@
               "sourceMap": true
             },
             "default": {},
-            "blue": {}
+            "blue": {},
+            "brand": {}
           }
         },
         "serve-ssr": {
@@ -176,6 +181,10 @@
             "blue": {
               "browserTarget": "intershop-pwa:build:blue,development",
               "serverTarget": "intershop-pwa:server:blue,development"
+            },
+            "brand": {
+              "browserTarget": "intershop-pwa:build:brand,development",
+              "serverTarget": "intershop-pwa:server:brand,development"
             }
           }
         }
@@ -188,7 +197,7 @@
       },
       "root": "projects/organization-management",
       "sourceRoot": "projects/organization-management/src",
-      "prefix": "ish",
+      "prefix": "sh",
       "architect": {
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
@@ -237,7 +246,7 @@
       },
       "root": "projects/requisition-management",
       "sourceRoot": "projects/requisition-management/src",
-      "prefix": "ish",
+      "prefix": "sh",
       "architect": {
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",

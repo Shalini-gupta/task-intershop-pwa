@@ -1,0 +1,3 @@
+<h1>{{ 'warehouse.heading.text' | translate }}</h1>
+
+<p *ngFor="let item of warehouse$ | async">{{ item.country }}, {{ item.city }}, {{ item.zipcode }}</p>

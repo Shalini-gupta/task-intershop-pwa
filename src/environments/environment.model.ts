@@ -117,6 +117,9 @@ export const ENVIRONMENT_DEFAULTS: Omit<Environment, 'icmChannel'> = {
   icmApplication: 'rest',
   identityProvider: 'ICM',
 
+  apiMockPaths: ['^warehouse/.*'],
+  // apiMockPaths: ['^warehouse/.*', '^cms/.*'],
+
   /* FEATURE TOOGLES */
   features: ['compare', 'guestCheckout', 'recently', 'rating', 'wishlists'],
 
