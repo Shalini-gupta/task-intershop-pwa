@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { WarehousePageComponent } from './warehouse-page.component';
 
@@ -9,6 +10,7 @@ describe('Warehouse Page Component', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [TranslateModule.forRoot()],
       declarations: [WarehousePageComponent],
     }).compileComponents();
   });

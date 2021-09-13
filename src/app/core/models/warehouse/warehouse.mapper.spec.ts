@@ -1,28 +1,19 @@
-import { TestBed } from '@angular/core/testing';
-
 import { WarehouseData } from './warehouse.interface';
 import { WarehouseMapper } from './warehouse.mapper';
 
 describe('Warehouse Mapper', () => {
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    TestBed.inject(WarehouseMapper);
-  });
-
   describe('fromData', () => {
-    it('should throw when input is falsy', () => {
-      expect(() => WarehouseMapper.fromData(undefined)).toThrow();
-    });
-
     it('should map incoming data to model data', () => {
-      const data: WarehouseData = {
-        country: 'test',
-        city: 'test',
-        zipcode: 'test',
-      };
-      const mapped = WarehouseMapper.fromData(data);
-      expect(mapped).toHaveProperty('id', 'test');
-      expect(mapped).not.toHaveProperty('otherField');
+      const warehouseData = {
+        country: 'Germany',
+        city: 'Jena',
+        zipcode: '4957',
+      } as WarehouseData;
+      const warehouse = WarehouseMapper.fromData(warehouseData);
+
+      expect(warehouse.country).toBe(warehouseData.country);
+      expect(warehouse.city).toBe(warehouseData.city);
+      expect(warehouse.zipcode).toBe(warehouseData.zipcode);
     });
   });
 });
