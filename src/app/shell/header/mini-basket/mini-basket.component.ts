@@ -5,6 +5,7 @@ import { filter, mapTo, switchMap, takeUntil } from 'rxjs/operators';
 
 import { AppFacade } from 'ish-core/facades/app.facade';
 import { CheckoutFacade } from 'ish-core/facades/checkout.facade';
+import { BasketView } from 'ish-core/models/basket/basket.model';
 import { HttpError } from 'ish-core/models/http-error/http-error.model';
 import { PriceItem } from 'ish-core/models/price-item/price-item.model';
 import { whenTruthy } from 'ish-core/utils/operators';
@@ -18,6 +19,7 @@ export class MiniBasketComponent implements OnInit, OnDestroy {
   basketAnimation$: Observable<string>;
   itemTotal$: Observable<PriceItem>;
   itemCount$: Observable<number>;
+  basketTotal$: Observable<BasketView>;
 
   isCollapsed = true;
 
@@ -42,6 +44,7 @@ export class MiniBasketComponent implements OnInit, OnDestroy {
     this.itemCount$ = this.checkoutFacade.basketItemCount$;
     this.itemTotal$ = this.checkoutFacade.basketItemTotal$;
     this.basketError$ = this.checkoutFacade.basketError$;
+    this.basketTotal$ = this.checkoutFacade.basket$;
 
     this.basketError$
       .pipe(

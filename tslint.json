@@ -61,7 +61,6 @@
       }
     ],
     "naming-convention": [
-      // https://github.com/ajafff/tslint-consistent-codestyle/blob/master/docs/naming-convention.md
       true,
       {
         "type": "functionVariable",
